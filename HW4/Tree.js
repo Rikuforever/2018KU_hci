@@ -30,23 +30,31 @@ class Tree
     {
         this.root = node;
     }
-    traverse(callback)
+    traverse(pre_callback, post_callback)      // Depth First Search
     {
-        var queue = [];
-        queue.push(this.root);
-
-        var currentNode = queue.shift();
-
-        while(currentNode)
+        // this is a recurse and immediately-invoking function
+        (function recurse(currentNode)
         {
-            for(var i = 0, length = currentNode.children.length; i < length; i++)
+            // step 2
+            if(pre_callback)
             {
-                queue.push(currentNode.children[i]);
+                pre_callback(currentNode);
             }
 
-            callback(currentNode);
-            currentNode = queue.shift();
-        }
+            // step 3
+            for (var i = 0, length = currentNode.children.length; i < length; i++) {
+                // step 4
+                recurse(currentNode.children[i]);
+            }
+
+            // step 4
+            if(post_callback)
+            {
+                post_callback(currentNode);
+            }
+
+            // step 1
+        })(this.root);
     }
     search_node(ID)
     {

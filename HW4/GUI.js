@@ -11,6 +11,8 @@ var FONT_DEFAULT = "20px Arial";
 
 var SIZE_HEIGHT_MIN = 30;
 
+
+
 class GUI
 {
     constructor(ID, height, width)
