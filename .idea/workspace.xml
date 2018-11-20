@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="68">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW4/HW4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="306">
+              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW4/GUI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4046">
-              <caret line="31" column="139" selection-start-line="31" selection-start-column="139" selection-end-line="31" selection-end-column="139" />
+            <state relative-caret-position="372">
+              <caret line="357" column="24" selection-start-line="357" selection-start-column="24" selection-end-line="357" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/HW4/Utility.js" />
         <option value="$PROJECT_DIR$/HW4/Tree.js" />
         <option value="$PROJECT_DIR$/HW4/Graphic.js" />
-        <option value="$PROJECT_DIR$/HW4/GUI.js" />
         <option value="$PROJECT_DIR$/HW4/HW4.html" />
+        <option value="$PROJECT_DIR$/HW4/GUI.js" />
       </list>
     </option>
   </component>
@@ -169,12 +169,12 @@
       <workItem from="1542591977739" duration="9992000" />
       <workItem from="1542621844597" duration="6962000" />
       <workItem from="1542632295512" duration="464000" />
-      <workItem from="1542699130911" duration="10369000" />
+      <workItem from="1542699130911" duration="10620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28154000" />
+    <option name="totallyTimeSpent" value="28405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -189,7 +189,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11643836" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11643836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,30 +222,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4/Queue.js" />
     <entry file="file://$PROJECT_DIR$/HW4/Utility.js" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HW4/Tree.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4/Graphic.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HW4/GUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4046">
-          <caret line="31" column="139" selection-start-line="31" selection-start-column="139" selection-end-line="31" selection-end-column="139" />
+        <state relative-caret-position="372">
+          <caret line="357" column="24" selection-start-line="357" selection-start-column="24" selection-end-line="357" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4/HW4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
         </state>
       </provider>
     </entry>

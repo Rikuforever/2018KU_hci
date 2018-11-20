@@ -355,6 +355,7 @@ class Tree
         if(node)
         {
             node.delete();
+            return node;
         }
         else
         {
