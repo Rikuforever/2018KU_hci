@@ -7,26 +7,37 @@
     <script type="text/javascript">
         function draw()
         {
-            var gui = new GUI1("myCanvas", "1000", "1000");
-
+            // Create root node of the tree
             var root = new Node(getNewID(), new GUI(new Transform(0, 0, 0, 0)));
-            var textbox1 = create_textbox(new Transform(150, 450, 300, 300), "Hello World");
-            var textbox2 = create_textbox(new Transform(300, 300, 100, 100), "Fuck You");
-            
+
+            // Create nodes for each graphic
+            var textbox1 = create_textbox(new Transform(150, 450, 300, 300), "Demo1");
+            var textbox2 = create_textbox(new Transform(300, 300, 100, 100), "Demo2");
+            var textbox3 = create_textbox(new Transform(700, 300, 100, 100), "Demo3");
+            var button = create_button(new Transform(500, 500, 100 ,100), "BUTTON");
+            var window = create_window(new Transform(700, 700, 200, 200), "WINDOW");
+
+            // Every component is a node and can be paired as parent-child
+            root.add(button);
+
+            // 'textbox1' will be rendered over 'textbox2', because it's latter among the children
             root.add(textbox2);
+            root.add(textbox3);
             root.add(textbox1);
 
-            gui_draw(gui.ctx, root);
+            // 'window' node includes button nodes, check GUI.js
+            root.add(window);
 
-            /*
-            gui.drawRect(10, 10, 50, 50, "rgb(200,0,0)");
-            gui.drawRect(30, 30, 50, 50, "rgba(0, 0, 200, 0.5)");
+            // 'textbox3' won't be rendered, because it's deleted from tree
+            var tree = new Tree(root);
+            tree.delete_node(textbox3.id);
 
-            gui.create_window("1", 100, 100, 300, 300, "ASD");
-            gui.create_button("2", 500, 500, 100, 100, "BUTTON1");
-            gui.create_textbox("3", 100, 500, 300, 300, "HELLO WORLD!", "30px Arial");
-            gui.create_menu("4", 500, 100, 200, 50, "MENU", ["ITEM1", "ITEM2", "ITEM3", "ITEM4"]);
-            */
+            // since the position values are subjective, children will move with parent
+            root.data.T = new Transform(50, -100, 0, 0);
+
+            // render
+            var ctx = create_ctx("myCanvas", "1000", "1000");
+            gui_draw(ctx, tree);
         }
     </script>
     <style type="text/css">
