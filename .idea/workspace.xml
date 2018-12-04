@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74eaca46-a624-4e91-9848-763f19c5b0b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW4_1-3/GUI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW4_1-3/HW4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW4_1-3/GUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/HW4_1-3/GUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW4_1-3/HW4.html" beforeDir="false" afterPath="$PROJECT_DIR$/HW4_1-3/HW4.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,19 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HW4_1-3/GUI.js">
+        <entry file="file://$PROJECT_DIR$/HW4_1-3/HW4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11254">
-              <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+            <state relative-caret-position="385">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HW4_1-3/HW4.html">
+        <entry file="file://$PROJECT_DIR$/HW4_1-3/GUI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="27" column="64" lean-forward="true" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+            <state relative-caret-position="8466">
+              <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -63,6 +63,12 @@
       <find>traverse</find>
       <find>console</find>
       <find>strokestyle</find>
+      <find>button</find>
+      <find>create_button</find>
+      <find>rect</find>
+      <find>ctx</find>
+      <find>goto</find>
+      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace>.id</replace>
@@ -84,8 +90,8 @@
         <option value="$PROJECT_DIR$/HW4/GUI.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/HW4_1-2/HW4.html" />
-        <option value="$PROJECT_DIR$/HW4_1-3/HW4.html" />
         <option value="$PROJECT_DIR$/HW4_1-3/GUI.js" />
+        <option value="$PROJECT_DIR$/HW4_1-3/HW4.html" />
       </list>
     </option>
   </component>
@@ -103,6 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,7 +131,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,11 +187,13 @@
       <workItem from="1543688056968" duration="352000" />
       <workItem from="1543809621507" duration="2160000" />
       <workItem from="1543836291742" duration="4430000" />
+      <workItem from="1543907419271" duration="6192000" />
+      <workItem from="1543927701792" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35367000" />
+    <option name="totallyTimeSpent" value="41896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,7 +220,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32962137" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.32924107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -259,15 +267,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4_1-3/HW4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="27" column="64" lean-forward="true" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        <state relative-caret-position="385">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW4_1-3/GUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11254">
-          <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+        <state relative-caret-position="8466">
+          <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
         </state>
       </provider>
     </entry>

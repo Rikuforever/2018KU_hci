@@ -36,6 +36,10 @@ function currentGUI()
 
 function gui_draw(ctx, tree)
 {
+    // clear
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+    // draw
     var globalT = new Transform(tree.root.data.T.position_x, tree.root.data.T.position_y, tree.root.data.T.height, tree.root.data.T.width);
 
     var pre_callback = function(node)
@@ -147,6 +151,7 @@ function create_textbox(transform, text = "", font = FONT_DEFAULT)
     gui_data.onClick = function()
     {
         gui_data.onSelect();
+        root.goto_last();
     };
     gui_data.onSelect = function()
     {
@@ -160,7 +165,7 @@ function create_textbox(transform, text = "", font = FONT_DEFAULT)
     return root;
 }
 
-function create_button(transform, text = "", font = FONT_DEFAULT)
+function create_button(transform, text = "", onClick = null, font = FONT_DEFAULT)
 {
     // 0. Root
     var gui_data = new GUI(transform);
@@ -182,6 +187,7 @@ function create_button(transform, text = "", font = FONT_DEFAULT)
     gui_data.onClick = function()
     {
         gui_data.onSelect();
+        if(onClick) onClick();
     };
     gui_data.onSelect = function()
     {
@@ -223,17 +229,25 @@ function create_window(transform, title = "")
     root.add(new Node(getNewID(), text_data));
 
     // 4. Button(X)
-    var close_node = create_button(new Transform((w/2) - (WINDOW_TITLE_HEIGHT/2), (h/2) - (WINDOW_TITLE_HEIGHT/2), WINDOW_TITLE_HEIGHT, WINDOW_TITLE_HEIGHT), "X");
+    var close_transform = new Transform((w/2) - (WINDOW_TITLE_HEIGHT/2), (h/2) - (WINDOW_TITLE_HEIGHT/2), WINDOW_TITLE_HEIGHT, WINDOW_TITLE_HEIGHT);
+    var close_callback = function()
+    {
+        root.delete();
+    };
+    var close_node = create_button(close_transform, "X", close_callback);
     root.add(close_node);
 
     // 5. Button(_)
+    /*
     var min_node = create_button(new Transform((w/2) - (WINDOW_TITLE_HEIGHT/2) - WINDOW_TITLE_HEIGHT, (h/2) - (WINDOW_TITLE_HEIGHT/2), WINDOW_TITLE_HEIGHT, WINDOW_TITLE_HEIGHT), "_");
     root.add(min_node);
+    */
 
-    // EventListener
+    // [Window] EventListener
     gui_data.onClick = function()
     {
         gui_data.onSelect();
+        root.goto_last();
     };
     gui_data.onSelect = function()
     {
@@ -417,6 +431,15 @@ class Node
         }
 
         this.parent = null;
+    }
+    goto_last()
+    {
+        if(!this.parent)
+            return;
+
+        var index = this.parent.children.indexOf(this);
+        this.parent.children.splice(index, 1);
+        this.parent.add(this);
     }
 }
 
